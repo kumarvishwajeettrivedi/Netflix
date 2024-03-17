@@ -74,12 +74,12 @@ useEffect(()=>{
   return (
     <section className='home'>
     <div className='banner' style={{
-      backgroundImage: upcomingmovies && upcomingmovies[12] ? `url(${`${imgurl}/${upcomingmovies[12].poster_path}`})` : ''
+      backgroundImage: upcomingmovies && upcomingmovies[0] ? `url(${`${imgurl}/${upcomingmovies[0].poster_path}`})` : ''
     }}>
-      {upcomingmovies && upcomingmovies[12] && (
+      {upcomingmovies && upcomingmovies[0] && (
         <>
-          <h1>{upcomingmovies[12].original_title}</h1>
-          <p>{upcomingmovies[12].overview}</p>
+          <h1>{upcomingmovies[0].original_title}</h1>
+          <p>{upcomingmovies[0].overview}</p>
         </>
       )}
 
